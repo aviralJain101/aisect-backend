@@ -16,5 +16,13 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aviralJain101/aisect-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aviralJain101/aisect-backend/issues"
+  },
+  "homepage": "https://github.com/aviralJain101/aisect-backend#readme",
   "description": ""
 }
