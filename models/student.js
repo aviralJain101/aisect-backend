@@ -9,26 +9,86 @@ const Student = sequelize.define('student', {
         allowNull: false,
         primaryKey: true,
     },
-    name: Sequelize.STRING,
-    fatherName: Sequelize.STRING,
-    address: Sequelize.STRING,
-    mobileNo: Sequelize.STRING,
-    totalFees: Sequelize.STRING,
-    firstInstall: Sequelize.STRING,
-    secondInstall: Sequelize.STRING,
-    thirdInstall: Sequelize.STRING,
-    fourthInstall: Sequelize.STRING,
-    fifthInstall: Sequelize.STRING,
-    sixthInstall: Sequelize.STRING,
-    seventhInstall: Sequelize.STRING,
-    eighthInstall: Sequelize.STRING,
-    ninthInstall: Sequelize.STRING,
-    tenthInstall: Sequelize.STRING,
-    remFees: Sequelize.STRING,
-    courseName: Sequelize.STRING,
-    admissionDate: Sequelize.STRING,
-    couseDuration: Sequelize.STRING,
-    univName: Sequelize.STRING,
+    name: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    fatherName: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    address: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    mobileNo: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    totalFees: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    firstInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    secondInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    thirdInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    fourthInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    fifthInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    sixthInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    seventhInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    eighthInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    ninthInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    tenthInstall: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    remFees: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    courseName: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    admissionDate: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    couseDuration: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
+    univName: {
+        type: Sequelize.STRING,
+        default: '0'
+    },
 })
 
 module.exports = Student
