@@ -11,19 +11,19 @@ const Student = sequelize.define('student', {
     },
     name: {
         type: Sequelize.STRING,
-        defaultValue: '0'
+        defaultValue: 'NA'
     },
     fatherName: {
         type: Sequelize.STRING,
-        defaultValue: '0'
+        defaultValue: 'NA'
     },
     address: {
         type: Sequelize.STRING,
-        defaultValue: '0'
+        defaultValue: 'NA'
     },
     mobileNo: {
         type: Sequelize.STRING,
-        defaultValue: '0'
+        defaultValue: 'NA'
     },
     totalFees: {
         type: Sequelize.STRING,
@@ -75,19 +75,19 @@ const Student = sequelize.define('student', {
     },
     courseName: {
         type: Sequelize.STRING,
-        defaultValue: '0'
+        defaultValue: 'NA'
     },
     admissionDate: {
         type: Sequelize.STRING,
-        defaultValue: '0'
+        defaultValue: 'NA'
     },
     couseDuration: {
         type: Sequelize.STRING,
-        defaultValue: '0'
+        defaultValue: 'NA'
     },
     univName: {
         type: Sequelize.STRING,
-        defaultValue: '0'
+        defaultValue: 'NA'
     },
 })
 
