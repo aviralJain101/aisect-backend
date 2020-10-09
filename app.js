@@ -11,8 +11,8 @@ app.use(express.json());//parse the incoming json data
 app.use(studentRouter);
 
 sequelize
-  .sync({force: true}) 
-  //.sync()
+  //.sync({force: true}) 
+  .sync()
   .then(result => {
     app.listen(port,()=>{
       console.log('Server is up on port',port)
