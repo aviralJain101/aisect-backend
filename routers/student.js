@@ -51,10 +51,14 @@ router.get('/student/list', async(req,res)=>{
     }
 })
 
-router.delete('student/details/:id', async(req,res)=>{
+router.delete('/student/details/:id', async(req,res)=>{
     const _id = req.params.id;
     try{
-        await Student.destroy(_id);
+        await Student.destroy({
+            where: {
+                id: _id
+            }
+        });
         res.send('deleted');
     }catch(e){
         res.status(440).send(e);
