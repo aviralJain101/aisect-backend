@@ -94,7 +94,7 @@ const Student = sequelize.define('student', {
             const total = (parseInt(student.firstInstall) || 0) + (parseInt(student.secondInstall) || 0) + (parseInt(student.thirdInstall) || 0) + (parseInt(student.fourthInstall) || 0) + (parseInt(student.fifthInstall) || 0) + (parseInt(student.sixthInstall) || 0) + (parseInt(student.seventhInstall) || 0) + (parseInt(student.eighthInstall) || 0) + (parseInt(student.ninthInstall) || 0) + (parseInt(student.tenthInstall) || 0);
             student.remFees = (parseInt(student.totalFees) - total).toString();
         },
-        beforeUpdate: (student) => {
+        afterUpdate: (student) => {
             const total = (parseInt(student.firstInstall) || 0) + (parseInt(student.secondInstall) || 0) + (parseInt(student.thirdInstall) || 0) + (parseInt(student.fourthInstall) || 0) + (parseInt(student.fifthInstall) || 0) + (parseInt(student.sixthInstall) || 0) + (parseInt(student.seventhInstall) || 0) + (parseInt(student.eighthInstall) || 0) + (parseInt(student.ninthInstall) || 0) + (parseInt(student.tenthInstall) || 0);
             student.remFees = (parseInt(student.totalFees) - total).toString();
         }
